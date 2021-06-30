@@ -14,6 +14,10 @@
 		A821EA66268BBDBF008D3958 /* GrowGreenApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A821EA64268BBDBF008D3958 /* GrowGreenApp.xcdatamodeld */; };
 		A821EA68268BBDC0008D3958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A821EA67268BBDC0008D3958 /* Assets.xcassets */; };
 		A821EA6B268BBDC0008D3958 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A821EA69268BBDC0008D3958 /* LaunchScreen.storyboard */; };
+		A821EA75268CEE2F008D3958 /* RecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA74268CEE2F008D3958 /* RecipesViewController.swift */; };
+		A821EA77268CF026008D3958 /* GardensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA76268CF026008D3958 /* GardensViewController.swift */; };
+		A821EA79268CF3CA008D3958 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA78268CF3CA008D3958 /* ResourcesViewController.swift */; };
+		A821EA7B268CF4EA008D3958 /* SearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA7A268CF4EA008D3958 /* SearcherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		A821EA67268BBDC0008D3958 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A821EA6A268BBDC0008D3958 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A821EA6C268BBDC0008D3958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A821EA74268CEE2F008D3958 /* RecipesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipesViewController.swift; sourceTree = "<group>"; };
+		A821EA76268CF026008D3958 /* GardensViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardensViewController.swift; sourceTree = "<group>"; };
+		A821EA78268CF3CA008D3958 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		A821EA7A268CF4EA008D3958 /* SearcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearcherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				A821EA69268BBDC0008D3958 /* LaunchScreen.storyboard */,
 				A821EA6C268BBDC0008D3958 /* Info.plist */,
 				A821EA64268BBDBF008D3958 /* GrowGreenApp.xcdatamodeld */,
+				A821EA74268CEE2F008D3958 /* RecipesViewController.swift */,
+				A821EA76268CF026008D3958 /* GardensViewController.swift */,
+				A821EA78268CF3CA008D3958 /* ResourcesViewController.swift */,
+				A821EA7A268CF4EA008D3958 /* SearcherViewController.swift */,
 			);
 			path = GrowGreenApp;
 			sourceTree = "<group>";
@@ -143,6 +155,10 @@
 				A821EA60268BBDBF008D3958 /* ViewController.swift in Sources */,
 				A821EA5C268BBDBF008D3958 /* AppDelegate.swift in Sources */,
 				A821EA66268BBDBF008D3958 /* GrowGreenApp.xcdatamodeld in Sources */,
+				A821EA7B268CF4EA008D3958 /* SearcherViewController.swift in Sources */,
+				A821EA79268CF3CA008D3958 /* ResourcesViewController.swift in Sources */,
+				A821EA77268CF026008D3958 /* GardensViewController.swift in Sources */,
+				A821EA75268CEE2F008D3958 /* RecipesViewController.swift in Sources */,
 				A821EA5E268BBDBF008D3958 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
