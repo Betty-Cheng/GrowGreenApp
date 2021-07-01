@@ -1114,15 +1114,51 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pictureOfBasil" translatesAutoresizingMaskIntoConstraints="NO" id="tpw-MX-y3O">
+                                <rect key="frame" x="52" y="117" width="311" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days it's been since you've sown the seed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfg-Nc-UYW">
+                                <rect key="frame" x="20" y="469" width="394" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnR-yU-jkO">
+                                <rect key="frame" x="-7" y="601" width="428" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Calculate days till transplantation and harvest">
+                                    <color key="titleColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBasilDays:" destination="nyu-x2-eDX" eventType="touchUpInside" id="84z-Kp-rhb"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wec-4C-IQq">
+                                <rect key="frame" x="106" y="432" width="212" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="HcW-se-ptd"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zPR-7t-SIh"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="hnj-X8-AGg"/>
+                    <connections>
+                        <outlet property="basilSlider" destination="wec-4C-IQq" id="bgd-C9-N67"/>
+                        <outlet property="information" destination="pfg-Nc-UYW" id="stj-sp-kdC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="59t-iH-yT8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3667" y="-68"/>
+            <point key="canvasLocation" x="3666.666666666667" y="-68.303571428571431"/>
         </scene>
         <!--Rosemary View Controller-->
         <scene sceneID="ZW0-Ky-h9i">
@@ -1235,21 +1271,59 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rosemary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYk-Uk-mfZ">
-                                <rect key="frame" x="121" y="64" width="173" height="41"/>
+                                <rect key="frame" x="120" y="64" width="173" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="35"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Cgp-Yg-ndv">
+                                <rect key="frame" x="119" y="434" width="212" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="9Jb-0A-tT2"/>
+                                    <action selector="rosemaryNumberOfDaysSincePlanting:" destination="fds-Ld-Ng4" eventType="valueChanged" id="Anb-WR-lE5"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days it's been since you've sown the seed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WN-Od-czj">
+                                <rect key="frame" x="15" y="471" width="394" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0N-Ac-8tk">
+                                <rect key="frame" x="-2" y="605" width="428" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Calculate days till transplantation and harvest">
+                                    <color key="titleColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBasilDays:" destination="nyu-x2-eDX" eventType="touchUpInside" id="JHo-hE-hnO"/>
+                                    <action selector="calculateRosemaryDays:" destination="fds-Ld-Ng4" eventType="touchUpInside" id="ZVz-Nc-NQg"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rosemaryPicture" translatesAutoresizingMaskIntoConstraints="NO" id="1cK-O3-h2r">
+                                <rect key="frame" x="49" y="113" width="315" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="AL2-PL-LPC"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="W20-kp-nJF"/>
+                    <connections>
+                        <outlet property="rosemaryInformation" destination="1WN-Od-czj" id="tGD-U2-1eg"/>
+                        <outlet property="rosemarySlider" destination="Cgp-Yg-ndv" id="cZl-xZ-CyH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="syU-BN-dgx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4381" y="-68"/>
+            <point key="canvasLocation" x="4379.7101449275369" y="-68.303571428571431"/>
         </scene>
         <!--Lettuce View Controller-->
         <scene sceneID="Q2d-aH-XHt">
@@ -1876,15 +1950,55 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jZt-qf-A9L">
+                                <rect key="frame" x="101" y="434" width="212" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="QzL-92-Kte"/>
+                                    <action selector="mintNumberOfDaysSincePlanting:" destination="hj6-Qw-eFi" eventType="valueChanged" id="JQX-pZ-lvQ"/>
+                                    <action selector="rosemaryNumberOfDaysSincePlanting:" destination="fds-Ld-Ng4" eventType="valueChanged" id="20u-2g-teW"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days it's been since you've sown the seed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q38-dc-lSQ">
+                                <rect key="frame" x="1" y="471" width="394" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3z5-Af-PkK">
+                                <rect key="frame" x="-14" y="601" width="428" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Calculate days till transplantation and harvest">
+                                    <color key="titleColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBasilDays:" destination="nyu-x2-eDX" eventType="touchUpInside" id="rnz-IY-6qy"/>
+                                    <action selector="calculateMintDays:" destination="hj6-Qw-eFi" eventType="touchUpInside" id="J98-Wq-mWq"/>
+                                    <action selector="calculateRosemaryDays:" destination="fds-Ld-Ng4" eventType="touchUpInside" id="Y5h-e0-1wq"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="mintPicture" translatesAutoresizingMaskIntoConstraints="NO" id="LpL-X9-SuU">
+                                <rect key="frame" x="42" y="118" width="317" height="235"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2EQ-OG-VO0"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="ahk-zJ-PC3"/>
+                    <connections>
+                        <outlet property="mintInformation" destination="q38-dc-lSQ" id="p5S-eA-AaG"/>
+                        <outlet property="mintSlider" destination="jZt-qf-A9L" id="udZ-pm-N4n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OzU-2t-NZa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5112" y="-68"/>
+            <point key="canvasLocation" x="5111.594202898551" y="-68.303571428571431"/>
         </scene>
         <!--Cherry Tomatoes View Controller-->
         <scene sceneID="Vyk-Yz-np3">
@@ -2003,15 +2117,57 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cherryTomatoesPicture" translatesAutoresizingMaskIntoConstraints="NO" id="6IU-II-brE">
+                                <rect key="frame" x="61" y="111" width="291" height="244"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LXn-mD-xui">
+                                <rect key="frame" x="101" y="434" width="212" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <connections>
+                                    <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="Dx5-Kv-EdS"/>
+                                    <action selector="cherryTomatoNumberOfDaysSincePlanting:" destination="DJR-YR-MXR" eventType="valueChanged" id="Bj5-7Q-8Ui"/>
+                                    <action selector="mintNumberOfDaysSincePlanting:" destination="hj6-Qw-eFi" eventType="valueChanged" id="hcy-7k-r1G"/>
+                                    <action selector="rosemaryNumberOfDaysSincePlanting:" destination="fds-Ld-Ng4" eventType="valueChanged" id="fpd-ac-fMF"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days it's been since you've sown the seed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFq-io-YJp">
+                                <rect key="frame" x="0.0" y="471" width="394" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YUN-oL-Us8">
+                                <rect key="frame" x="-17" y="598" width="428" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Calculate days till transplantation and harvest">
+                                    <color key="titleColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBasilDays:" destination="nyu-x2-eDX" eventType="touchUpInside" id="lSc-Eo-Mc2"/>
+                                    <action selector="calculateCherryTomatoDays:" destination="DJR-YR-MXR" eventType="touchUpInside" id="uZE-LB-ilz"/>
+                                    <action selector="calculateMintDays:" destination="hj6-Qw-eFi" eventType="touchUpInside" id="Lby-gG-NyR"/>
+                                    <action selector="calculateRosemaryDays:" destination="fds-Ld-Ng4" eventType="touchUpInside" id="3zt-Z6-8Kv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NKS-cG-r80"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="jI0-O5-ctP"/>
+                    <connections>
+                        <outlet property="cherryTomatoInformation" destination="yFq-io-YJp" id="QxU-7O-jkt"/>
+                        <outlet property="cherryTomatoSlider" destination="LXn-mD-xui" id="yoi-U7-Mfh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N9A-yj-tFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5832" y="-68"/>
+            <point key="canvasLocation" x="5831.884057971015" y="-68.303571428571431"/>
         </scene>
         <!--Searcher View Controller-->
         <scene sceneID="Lfj-hr-bmz">
@@ -2156,12 +2312,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="LTl-Ju-W0j"/>
-        <segue reference="Z4g-S9-SPB"/>
-        <segue reference="YdS-9k-5Ql"/>
-        <segue reference="MPO-tx-gCP"/>
+        <segue reference="Put-L7-cF8"/>
+        <segue reference="6Yf-qI-X3l"/>
+        <segue reference="R06-OP-Ngl"/>
+        <segue reference="UB2-2Y-DDv"/>
         <segue reference="Kzs-Cr-RSf"/>
-        <segue reference="QBi-hn-m0s"/>
+        <segue reference="T72-Ka-jDi"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="About Us" width="814" height="400"/>
@@ -2181,6 +2337,7 @@
         <image name="Vaishnavi" width="1192" height="1280"/>
         <image name="basil" width="470" height="342"/>
         <image name="cherryTomatoes" width="466" height="324"/>
+        <image name="cherryTomatoesPicture" width="600" height="600"/>
         <image name="communitySearcher" width="384" height="384"/>
         <image name="cucumbers" width="476" height="324"/>
         <image name="earth2" width="687" height="687"/>
@@ -2192,9 +2349,12 @@
         <image name="lettuce" width="478" height="324"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="mint" width="476" height="318"/>
+        <image name="mintPicture" width="2138" height="2138"/>
         <image name="pepper" width="962" height="658"/>
+        <image name="pictureOfBasil" width="3744" height="3744"/>
         <image name="resources" width="512" height="512"/>
         <image name="rosemary" width="458" height="326"/>
+        <image name="rosemaryPicture" width="225" height="225"/>
         <image name="springOnions" width="470" height="328"/>
     </resources>
 </document>
