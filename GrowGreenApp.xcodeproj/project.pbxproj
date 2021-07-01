@@ -19,6 +19,15 @@
 		A821EA79268CF3CA008D3958 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA78268CF3CA008D3958 /* ResourcesViewController.swift */; };
 		A821EA7B268CF4EA008D3958 /* SearcherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA7A268CF4EA008D3958 /* SearcherViewController.swift */; };
 		A821EA7D268D4A8A008D3958 /* AboutUsMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA7C268D4A8A008D3958 /* AboutUsMissionViewController.swift */; };
+		A821EA7F268E30FA008D3958 /* PlantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA7E268E30FA008D3958 /* PlantsViewController.swift */; };
+		A821EA81268E3715008D3958 /* BasilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA80268E3715008D3958 /* BasilViewController.swift */; };
+		A821EA83268E3741008D3958 /* RosemaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA82268E3741008D3958 /* RosemaryViewController.swift */; };
+		A821EA85268E3766008D3958 /* MintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA84268E3766008D3958 /* MintViewController.swift */; };
+		A821EA87268E3798008D3958 /* CherryTomatoesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA86268E3798008D3958 /* CherryTomatoesViewController.swift */; };
+		A821EA89268E37D3008D3958 /* LettuceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA88268E37D3008D3958 /* LettuceViewController.swift */; };
+		A821EA8B268E37FD008D3958 /* SpringOnionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA8A268E37FD008D3958 /* SpringOnionsViewController.swift */; };
+		A821EA8D268E3823008D3958 /* CucumbersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA8C268E3823008D3958 /* CucumbersViewController.swift */; };
+		A821EA8F268E3852008D3958 /* PeppersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A821EA8E268E3852008D3958 /* PeppersViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +45,15 @@
 		A821EA78268CF3CA008D3958 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		A821EA7A268CF4EA008D3958 /* SearcherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearcherViewController.swift; sourceTree = "<group>"; };
 		A821EA7C268D4A8A008D3958 /* AboutUsMissionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsMissionViewController.swift; sourceTree = "<group>"; };
+		A821EA7E268E30FA008D3958 /* PlantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlantsViewController.swift; sourceTree = "<group>"; };
+		A821EA80268E3715008D3958 /* BasilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasilViewController.swift; sourceTree = "<group>"; };
+		A821EA82268E3741008D3958 /* RosemaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RosemaryViewController.swift; sourceTree = "<group>"; };
+		A821EA84268E3766008D3958 /* MintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MintViewController.swift; sourceTree = "<group>"; };
+		A821EA86268E3798008D3958 /* CherryTomatoesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CherryTomatoesViewController.swift; sourceTree = "<group>"; };
+		A821EA88268E37D3008D3958 /* LettuceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LettuceViewController.swift; sourceTree = "<group>"; };
+		A821EA8A268E37FD008D3958 /* SpringOnionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringOnionsViewController.swift; sourceTree = "<group>"; };
+		A821EA8C268E3823008D3958 /* CucumbersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CucumbersViewController.swift; sourceTree = "<group>"; };
+		A821EA8E268E3852008D3958 /* PeppersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeppersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +99,15 @@
 				A821EA78268CF3CA008D3958 /* ResourcesViewController.swift */,
 				A821EA7A268CF4EA008D3958 /* SearcherViewController.swift */,
 				A821EA7C268D4A8A008D3958 /* AboutUsMissionViewController.swift */,
+				A821EA7E268E30FA008D3958 /* PlantsViewController.swift */,
+				A821EA80268E3715008D3958 /* BasilViewController.swift */,
+				A821EA82268E3741008D3958 /* RosemaryViewController.swift */,
+				A821EA84268E3766008D3958 /* MintViewController.swift */,
+				A821EA86268E3798008D3958 /* CherryTomatoesViewController.swift */,
+				A821EA88268E37D3008D3958 /* LettuceViewController.swift */,
+				A821EA8A268E37FD008D3958 /* SpringOnionsViewController.swift */,
+				A821EA8C268E3823008D3958 /* CucumbersViewController.swift */,
+				A821EA8E268E3852008D3958 /* PeppersViewController.swift */,
 			);
 			path = GrowGreenApp;
 			sourceTree = "<group>";
@@ -156,11 +183,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				A821EA7D268D4A8A008D3958 /* AboutUsMissionViewController.swift in Sources */,
+				A821EA85268E3766008D3958 /* MintViewController.swift in Sources */,
 				A821EA60268BBDBF008D3958 /* ViewController.swift in Sources */,
 				A821EA5C268BBDBF008D3958 /* AppDelegate.swift in Sources */,
 				A821EA66268BBDBF008D3958 /* GrowGreenApp.xcdatamodeld in Sources */,
+				A821EA8D268E3823008D3958 /* CucumbersViewController.swift in Sources */,
+				A821EA81268E3715008D3958 /* BasilViewController.swift in Sources */,
+				A821EA8B268E37FD008D3958 /* SpringOnionsViewController.swift in Sources */,
 				A821EA7B268CF4EA008D3958 /* SearcherViewController.swift in Sources */,
 				A821EA79268CF3CA008D3958 /* ResourcesViewController.swift in Sources */,
+				A821EA89268E37D3008D3958 /* LettuceViewController.swift in Sources */,
+				A821EA7F268E30FA008D3958 /* PlantsViewController.swift in Sources */,
+				A821EA8F268E3852008D3958 /* PeppersViewController.swift in Sources */,
+				A821EA87268E3798008D3958 /* CherryTomatoesViewController.swift in Sources */,
+				A821EA83268E3741008D3958 /* RosemaryViewController.swift in Sources */,
 				A821EA77268CF026008D3958 /* GardensViewController.swift in Sources */,
 				A821EA75268CEE2F008D3958 /* RecipesViewController.swift in Sources */,
 				A821EA5E268BBDBF008D3958 /* SceneDelegate.swift in Sources */,
