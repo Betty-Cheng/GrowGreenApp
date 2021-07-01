@@ -382,7 +382,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRc-27-bHb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1054" y="1508"/>
+            <point key="canvasLocation" x="670" y="1535"/>
         </scene>
         <!--Recipes View Controller-->
         <scene sceneID="sQm-TA-Zgr">
@@ -545,7 +545,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbA-VV-r2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1425" y="1216"/>
+            <point key="canvasLocation" x="-829" y="1024"/>
         </scene>
         <!--Gardens View Controller-->
         <scene sceneID="IPp-5X-6OU">
@@ -691,7 +691,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="duD-2F-jxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="671" y="68"/>
+            <point key="canvasLocation" x="-394" y="126"/>
         </scene>
         <!--Resources View Controller-->
         <scene sceneID="Jpo-Ge-Ry1">
@@ -834,7 +834,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bg1-CZ-uT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1339" y="-47"/>
+            <point key="canvasLocation" x="1372" y="176"/>
         </scene>
         <!--Plants View Controller-->
         <scene sceneID="t3d-UG-gCU">
@@ -852,6 +852,9 @@
                                 <rect key="frame" x="16" y="748" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Recipe"/>
+                                <connections>
+                                    <segue destination="PCY-Ii-6He" kind="presentation" modalPresentationStyle="fullScreen" id="ORG-Ix-JGT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQG-l1-KT5">
                                 <rect key="frame" x="251" y="815" width="83" height="34"/>
@@ -861,28 +864,43 @@
                                 <state key="normal" title="Resources">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8uX-Jv-ThF" kind="presentation" modalPresentationStyle="fullScreen" id="rD9-lx-mMn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mVN-Tf-5UV">
                                 <rect key="frame" x="251" y="743" width="83" height="73"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.81176470590000005" green="0.83921568629999999" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Button" image="resources"/>
+                                <connections>
+                                    <segue destination="8uX-Jv-ThF" kind="presentation" modalPresentationStyle="fullScreen" id="AVx-1f-BFe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jqp-eW-3rr">
                                 <rect key="frame" x="91" y="747" width="67" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="1"/>
                                 <state key="normal" image="kitchenGarden"/>
+                                <connections>
+                                    <segue destination="kFM-kG-avc" kind="presentation" modalPresentationStyle="fullScreen" id="QRX-Yk-xEk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9yE-8H-p35">
                                 <rect key="frame" x="340" y="747" width="63" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="communitySearcher"/>
+                                <connections>
+                                    <segue destination="S7P-ZQ-gT9" kind="presentation" modalPresentationStyle="fullScreen" id="AFP-QF-odn"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIB-Ea-bkz">
                                 <rect key="frame" x="177" y="747" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="home"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="m4T-Xf-hhO"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jEo-au-qLv">
                                 <rect key="frame" x="17" y="816" width="60" height="31"/>
@@ -891,6 +909,9 @@
                                 <state key="normal" title="Recipes">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="PCY-Ii-6He" kind="presentation" modalPresentationStyle="fullScreen" id="ckZ-Gr-hEC"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFa-Hh-LJD">
                                 <rect key="frame" x="93" y="816" width="65" height="31"/>
@@ -899,6 +920,9 @@
                                 <state key="normal" title="Gardens">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kFM-kG-avc" kind="presentation" modalPresentationStyle="fullScreen" id="dSy-iZ-r99"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMz-5V-MAb">
                                 <rect key="frame" x="186" y="816" width="45" height="31"/>
@@ -907,6 +931,9 @@
                                 <state key="normal" title="Home">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="ka4-h4-x0E"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYa-9C-grV">
                                 <rect key="frame" x="335" y="816" width="70" height="31"/>
@@ -915,6 +942,9 @@
                                 <state key="normal" title="Searcher">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="S7P-ZQ-gT9" kind="presentation" modalPresentationStyle="fullScreen" id="a2o-nC-WzC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Plants" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOq-C0-JFg">
                                 <rect key="frame" x="154" y="66" width="107" height="41"/>
@@ -995,7 +1025,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6O-64-ot8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2722" y="-763"/>
+            <point key="canvasLocation" x="4874" y="-1110"/>
         </scene>
         <!--Basil View Controller-->
         <scene sceneID="lx5-yb-JmU">
@@ -2346,16 +2376,16 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nIw-MP-ycV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2722" y="833"/>
+            <point key="canvasLocation" x="1925" y="1024"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ve1-RV-m8F"/>
-        <segue reference="267-Yq-hmQ"/>
-        <segue reference="rLz-tg-zbN"/>
-        <segue reference="kni-No-UY3"/>
+        <segue reference="AFP-QF-odn"/>
+        <segue reference="rD9-lx-mMn"/>
+        <segue reference="dSy-iZ-r99"/>
+        <segue reference="ORG-Ix-JGT"/>
         <segue reference="Kzs-Cr-RSf"/>
-        <segue reference="yAe-Mj-Jp3"/>
+        <segue reference="ka4-h4-x0E"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="About Us" width="814" height="400"/>
