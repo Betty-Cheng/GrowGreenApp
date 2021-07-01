@@ -25,7 +25,7 @@ class CherryTomatoesViewController: UIViewController {
     
     @IBAction func cherryTomatoNumberOfDaysSincePlanting(_ sender: UISlider) {
         cherryTomatoPlantTime = Int(sender.value)
-        cherryTomatoInformation.text = "It's been \(cherryTomatoPlantTime) since you've sown the seed!"
+        cherryTomatoInformation.text = "It's been \(cherryTomatoPlantTime) days since you've sown the seed!"
     }
     
     @IBAction func calculateCherryTomatoDays(_ sender: UIButton) {
