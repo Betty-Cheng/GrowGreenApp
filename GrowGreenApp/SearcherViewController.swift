@@ -9,12 +9,28 @@ import UIKit
 
 class SearcherViewController: UIViewController {
 
+    @IBOutlet weak var openGoogleMapsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        openGoogleMapsButton.addTarget(self, action: #selector(openGoogleMaps), for: .touchUpInside)
     }
     
+    @objc func openGoogleMaps() {
+        if let urlToOpen = URL(string: "https://googlemaps.com") {
+            UIApplication.shared.open(urlToOpen, options: [:]) { (done) in
+                print("Link was opened successfully")
+            }
+    
+        }
+        
+            
+    }
+    
+
+
 
     /*
     // MARK: - Navigation
