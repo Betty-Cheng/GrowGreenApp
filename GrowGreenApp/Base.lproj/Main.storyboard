@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -134,10 +135,6 @@
                                 <rect key="frame" x="-1" y="319" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             </navigationBar>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="earth2" translatesAutoresizingMaskIntoConstraints="NO" id="0dc-Z5-Dl1">
-                                <rect key="frame" x="-52" y="319" width="521" height="339"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fzq-Qw-xc0">
                                 <rect key="frame" x="9" y="651" width="398" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -148,6 +145,14 @@
                                 </state>
                                 <connections>
                                     <segue destination="kKy-nd-YL6" kind="presentation" modalPresentationStyle="fullScreen" id="AA4-XW-IVP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LvK-8t-VTV">
+                                <rect key="frame" x="34" y="319" width="348" height="348"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="earth2"/>
+                                <connections>
+                                    <segue destination="kKy-nd-YL6" kind="presentation" modalPresentationStyle="fullScreen" id="Kzs-Cr-RSf"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -329,14 +334,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkc-oi-LLg">
-                                <rect key="frame" x="29" y="186" width="227" height="77"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Hi, my name is Vaishnavi! I'm a Kode With Klossy scholar who loves to bake, read, watch movies, code, and of course, grow plants!🪴</string>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="13"/>
-                                <color key="textColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Vaishnavi" translatesAutoresizingMaskIntoConstraints="NO" id="oae-Oa-PSF">
                                 <rect key="frame" x="214" y="139" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -356,6 +353,13 @@
                                 <rect key="frame" x="57" y="571" width="301" height="161"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">GrowGreen aims to guide people who lives in urban areas to create their own gardens. The app provides information of recipes, kitchen gardens, resources, and community garden searcher.🌿</string>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
+                                <color key="textColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hiya! It's me, Vaishnavi! I love to bake, read, watch Disney movies, grow plants, and code!🪴" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rkc-oi-LLg">
+                                <rect key="frame" x="20" y="186" width="239" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="15"/>
                                 <color key="textColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
@@ -764,16 +768,39 @@
                                 <rect key="frame" x="13" y="517" width="381" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="growPlants"/>
+                                <connections>
+                                    <segue destination="enR-li-LXh" kind="presentation" modalPresentationStyle="fullScreen" id="FVv-3b-iKw"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="BZ5-oc-IoI"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="ZOI-n5-Lwx"/>
+                    <connections>
+                        <outlet property="openDIYRecipesButton" destination="Wry-d8-l75" id="WxZ-n8-XC6"/>
+                        <outlet property="openGardenSuppliesButton" destination="S7r-Cl-6OC" id="MGL-BD-wsd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bg1-CZ-uT3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1905.7971014492755" y="-44.196428571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t3d-UG-gCU">
+            <objects>
+                <viewController id="enR-li-LXh" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PNG-mT-dCp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="z7O-xi-06O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cPU-WS-yrJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6O-64-ot8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2919" y="-147"/>
         </scene>
         <!--Searcher View Controller-->
         <scene sceneID="Lfj-hr-bmz">
@@ -918,11 +945,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8cH-a6-L6J"/>
-        <segue reference="K2X-Lg-4yp"/>
-        <segue reference="vnO-m0-4zw"/>
+        <segue reference="xaj-UM-uTP"/>
+        <segue reference="0SF-pY-mNy"/>
+        <segue reference="orQ-78-J58"/>
         <segue reference="hdV-bu-DKY"/>
-        <segue reference="Xr0-P6-ZHh"/>
+        <segue reference="Kzs-Cr-RSf"/>
+        <segue reference="8hj-qu-5sS"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="About Us" width="814" height="400"/>
@@ -940,5 +968,8 @@
         <image name="kitchenGarden" width="100" height="100"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="resources" width="512" height="512"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
