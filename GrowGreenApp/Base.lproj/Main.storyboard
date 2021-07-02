@@ -1168,10 +1168,10 @@
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="wec-4C-IQq">
-                                <rect key="frame" x="106" y="432" width="212" height="30"/>
+                                <rect key="frame" x="111" y="432" width="212" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.25996669802219269" green="0.33482042823737368" blue="0.31578871924071955" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="HcW-se-ptd"/>
                                 </connections>
@@ -1310,8 +1310,8 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Cgp-Yg-ndv">
                                 <rect key="frame" x="119" y="434" width="212" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.259966698" green="0.33482042820000002" blue="0.31578871920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="9Jb-0A-tT2"/>
                                     <action selector="rosemaryNumberOfDaysSincePlanting:" destination="fds-Ld-Ng4" eventType="valueChanged" id="Anb-WR-lE5"/>
@@ -1479,8 +1479,8 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="l5Q-uN-yZP">
                                 <rect key="frame" x="101" y="434" width="212" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.259966698" green="0.33482042820000002" blue="0.31578871920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="fKq-iC-WwC"/>
                                     <action selector="lettuceNumberOfDaysSincePlanting:" destination="viz-I2-ZfW" eventType="valueChanged" id="94z-F0-3L8"/>
@@ -1637,15 +1637,55 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="springOnionPicture" translatesAutoresizingMaskIntoConstraints="NO" id="rlR-Rq-iS4">
+                                <rect key="frame" x="20" y="0.0" width="381" height="453"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="CSB-L1-EkU">
+                                <rect key="frame" x="94" y="424" width="212" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.259966698" green="0.33482042820000002" blue="0.31578871920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="iBS-Tb-Wch"/>
+                                    <action selector="lettuceNumberOfDaysSincePlanting:" destination="viz-I2-ZfW" eventType="valueChanged" id="650-UA-YLk"/>
+                                    <action selector="springOnionNumberOfDaysSincePlanting:" destination="bPY-eR-e7h" eventType="valueChanged" id="Vh0-WH-AGf"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days it's been since you've sown the seed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kC7-b2-GPB">
+                                <rect key="frame" x="9" y="470" width="394" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RtV-mw-7av">
+                                <rect key="frame" x="-8" y="607" width="428" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Calculate days till transplantation and harvest">
+                                    <color key="titleColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBasilDays:" destination="nyu-x2-eDX" eventType="touchUpInside" id="cU4-2O-DEn"/>
+                                    <action selector="calculateLettuceDays:" destination="viz-I2-ZfW" eventType="touchUpInside" id="7k9-te-1cQ"/>
+                                    <action selector="calculateSpringOnionDays:" destination="bPY-eR-e7h" eventType="touchUpInside" id="RmI-gq-Amd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gf2-8j-dzi"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="SPO-AI-rq9"/>
+                    <connections>
+                        <outlet property="springOnionInformation" destination="kC7-b2-GPB" id="oUN-eX-WzC"/>
+                        <outlet property="springOnionSlider" destination="CSB-L1-EkU" id="YYR-ZV-ZNL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cyd-G3-BpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4380" y="633"/>
+            <point key="canvasLocation" x="4379.7101449275369" y="632.8125"/>
         </scene>
         <!--Cucumbers View Controller-->
         <scene sceneID="fjl-cy-oVE">
@@ -1764,15 +1804,57 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cucumberPicture" translatesAutoresizingMaskIntoConstraints="NO" id="Bln-ua-MSM">
+                                <rect key="frame" x="35" y="113" width="344" height="220"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days it's been since you've sown the seed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qH0-Bt-roy">
+                                <rect key="frame" x="0.0" y="471" width="394" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UCu-BC-plc">
+                                <rect key="frame" x="-7" y="604" width="428" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Calculate days till transplantation and harvest">
+                                    <color key="titleColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBasilDays:" destination="nyu-x2-eDX" eventType="touchUpInside" id="idI-53-EKk"/>
+                                    <action selector="calculateCucumberDays:" destination="Qma-Tm-rAm" eventType="touchUpInside" id="CXk-In-XEC"/>
+                                    <action selector="calculateLettuceDays:" destination="viz-I2-ZfW" eventType="touchUpInside" id="yQB-eO-AOY"/>
+                                    <action selector="calculateSpringOnionDays:" destination="bPY-eR-e7h" eventType="touchUpInside" id="Wmp-3W-eC9"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vv1-Cf-RrR">
+                                <rect key="frame" x="111" y="434" width="212" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.259966698" green="0.33482042820000002" blue="0.31578871920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="ksJ-3B-lJf"/>
+                                    <action selector="cucumberNumberOfDaysSincePlanting:" destination="Qma-Tm-rAm" eventType="valueChanged" id="bxL-t1-VHg"/>
+                                    <action selector="lettuceNumberOfDaysSincePlanting:" destination="viz-I2-ZfW" eventType="valueChanged" id="7do-H2-bng"/>
+                                    <action selector="springOnionNumberOfDaysSincePlanting:" destination="bPY-eR-e7h" eventType="valueChanged" id="a5g-DM-NYQ"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="PzR-a2-Rsz"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="UBB-Bu-hmB"/>
+                    <connections>
+                        <outlet property="cucumberInformation" destination="qH0-Bt-roy" id="X6C-SG-LRH"/>
+                        <outlet property="cucumberSlider" destination="vv1-Cf-RrR" id="q5D-8j-ibr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hQs-lJ-dcX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5112" y="633"/>
+            <point key="canvasLocation" x="5111.594202898551" y="632.8125"/>
         </scene>
         <!--Peppers View Controller-->
         <scene sceneID="j36-Lj-NQT">
@@ -1891,6 +1973,44 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pepperPicture" translatesAutoresizingMaskIntoConstraints="NO" id="QBN-1s-HdX">
+                                <rect key="frame" x="66" y="113" width="282" height="258"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="0rT-gY-xtu">
+                                <rect key="frame" x="101" y="425" width="212" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.259966698" green="0.33482042820000002" blue="0.31578871920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="oTw-4O-MX7"/>
+                                    <action selector="cucumberNumberOfDaysSincePlanting:" destination="Qma-Tm-rAm" eventType="valueChanged" id="0SL-yI-DKZ"/>
+                                    <action selector="lettuceNumberOfDaysSincePlanting:" destination="viz-I2-ZfW" eventType="valueChanged" id="F52-li-gYv"/>
+                                    <action selector="springOnionNumberOfDaysSincePlanting:" destination="bPY-eR-e7h" eventType="valueChanged" id="xpK-Ua-RoZ"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Days it's been since you've sown the seed" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4lx-S3-sqA">
+                                <rect key="frame" x="10" y="462" width="394" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01K-bi-P3D">
+                                <rect key="frame" x="-7" y="607" width="428" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <state key="normal" title="Calculate days till transplantation and harvest">
+                                    <color key="titleColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculateBasilDays:" destination="nyu-x2-eDX" eventType="touchUpInside" id="Y1Y-dD-CBU"/>
+                                    <action selector="calculateCucumberDays:" destination="Qma-Tm-rAm" eventType="touchUpInside" id="oNe-pW-qqf"/>
+                                    <action selector="calculateLettuceDays:" destination="viz-I2-ZfW" eventType="touchUpInside" id="a23-nU-BUI"/>
+                                    <action selector="calculateSpringOnionDays:" destination="bPY-eR-e7h" eventType="touchUpInside" id="6fe-yA-dPP"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2v5-EH-A0w"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -1899,7 +2019,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yap-G9-r8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5832" y="633"/>
+            <point key="canvasLocation" x="5831.884057971015" y="632.8125"/>
         </scene>
         <!--Mint View Controller-->
         <scene sceneID="fIy-Ct-6tO">
@@ -2021,8 +2141,8 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="jZt-qf-A9L">
                                 <rect key="frame" x="101" y="434" width="212" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.259966698" green="0.33482042820000002" blue="0.31578871920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="QzL-92-Kte"/>
                                     <action selector="mintNumberOfDaysSincePlanting:" destination="hj6-Qw-eFi" eventType="valueChanged" id="JQX-pZ-lvQ"/>
@@ -2192,8 +2312,8 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="35" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="LXn-mD-xui">
                                 <rect key="frame" x="101" y="434" width="212" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.259966698" green="0.33482042820000002" blue="0.31578871920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="Dx5-Kv-EdS"/>
                                     <action selector="cherryTomatoNumberOfDaysSincePlanting:" destination="DJR-YR-MXR" eventType="valueChanged" id="Bj5-7Q-8Ui"/>
@@ -2380,12 +2500,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="AFP-QF-odn"/>
-        <segue reference="rD9-lx-mMn"/>
-        <segue reference="dSy-iZ-r99"/>
-        <segue reference="ORG-Ix-JGT"/>
+        <segue reference="MBg-K6-WbS"/>
+        <segue reference="fOo-tH-GC6"/>
+        <segue reference="AKE-h5-Vxs"/>
+        <segue reference="VGM-Jb-BeN"/>
         <segue reference="Kzs-Cr-RSf"/>
-        <segue reference="ka4-h4-x0E"/>
+        <segue reference="iJ4-K9-ngl"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="About Us" width="814" height="400"/>
@@ -2407,6 +2527,7 @@
         <image name="cherryTomatoes" width="466" height="324"/>
         <image name="cherryTomatoesPicture" width="600" height="600"/>
         <image name="communitySearcher" width="384" height="384"/>
+        <image name="cucumberPicture" width="732" height="549"/>
         <image name="cucumbers" width="476" height="324"/>
         <image name="earth2" width="687" height="687"/>
         <image name="gardenSupplies" width="1024" height="584"/>
@@ -2420,10 +2541,12 @@
         <image name="mint" width="476" height="318"/>
         <image name="mintPicture" width="2138" height="2138"/>
         <image name="pepper" width="962" height="658"/>
+        <image name="pepperPicture" width="800" height="800"/>
         <image name="pictureOfBasil" width="3744" height="3744"/>
         <image name="resources" width="512" height="512"/>
         <image name="rosemary" width="458" height="326"/>
         <image name="rosemaryPicture" width="225" height="225"/>
+        <image name="springOnionPicture" width="872" height="490"/>
         <image name="springOnions" width="470" height="328"/>
     </resources>
 </document>
