@@ -542,6 +542,16 @@
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="sy6-iz-zbe"/>
+                    <connections>
+                        <outlet property="openBasilRecipe" destination="9b9-n8-3Ym" id="c3i-fK-mXQ"/>
+                        <outlet property="openCherryTomatoRecipe" destination="7a1-wO-WCe" id="Yx2-uK-PKF"/>
+                        <outlet property="openCucumberRecipe" destination="V4V-xq-jcq" id="FgS-qi-gfS"/>
+                        <outlet property="openLettuceRecipe" destination="6ow-cx-B5q" id="rpr-8b-iuz"/>
+                        <outlet property="openMintRecipe" destination="D5d-WR-HWb" id="99P-yq-PWm"/>
+                        <outlet property="openPepperRecipe" destination="3zA-Uh-uTx" id="D6Q-MW-ZUi"/>
+                        <outlet property="openRosemaryRecipe" destination="sab-Ub-fXe" id="9UI-9M-2mD"/>
+                        <outlet property="openSpringOnionRecipe" destination="laZ-98-Dvb" id="ZKx-d6-Erj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbA-VV-r2L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -683,15 +693,57 @@
                                     <segue destination="PCY-Ii-6He" kind="presentation" modalPresentationStyle="fullScreen" id="zeD-p2-35q"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitchenGardenImageInCans" translatesAutoresizingMaskIntoConstraints="NO" id="BdH-E9-Aby">
+                                <rect key="frame" x="-10" y="128" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitchenGardenOverSink" translatesAutoresizingMaskIntoConstraints="NO" id="hWW-Yl-0v8">
+                                <rect key="frame" x="185" y="128" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bOP-my-w6F">
+                                <rect key="frame" x="8" y="258" width="393" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.4196078479" green="0.53725492949999998" blue="0.50588238240000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">Kitchen gardens are relatively small and are located as close as possible to your kitchen. Most of what is grown in a kitchen garden is meant for daily use (in your kitchen). Kitchen gardens are key components in creating a healthier lifestyle.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kitchenGardenByTheWindow" translatesAutoresizingMaskIntoConstraints="NO" id="jEB-Vq-L3Y">
+                                <rect key="frame" x="-10" y="392" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="indoorSofaKitchenGarden" translatesAutoresizingMaskIntoConstraints="NO" id="WUT-Jw-enw">
+                                <rect key="frame" x="191" y="392" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzA-gq-4RX">
+                                <rect key="frame" x="20" y="528" width="395" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
+                                <state key="normal" title="Click here to find out more!!! 🪴">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pc0-X9-3i4">
+                                <rect key="frame" x="111" y="579" width="214" height="127"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="evenMoreVegetables"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cgC-D5-czx"/>
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="jTc-g2-fwp"/>
+                    <connections>
+                        <outlet property="findOutMoreAboutKitchenGardens" destination="yzA-gq-4RX" id="7ix-Pc-tKE"/>
+                        <outlet property="pictureFindOutMoreAboutKitchenGardens" destination="Pc0-X9-3i4" id="jhc-1p-6Fv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="duD-2F-jxa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-394" y="126"/>
+            <point key="canvasLocation" x="-394.20289855072468" y="125.89285714285714"/>
         </scene>
         <!--Resources View Controller-->
         <scene sceneID="Jpo-Ge-Ry1">
@@ -1986,6 +2038,7 @@
                                     <action selector="basilNumberOfDaysSincePlanting:" destination="nyu-x2-eDX" eventType="valueChanged" id="oTw-4O-MX7"/>
                                     <action selector="cucumberNumberOfDaysSincePlanting:" destination="Qma-Tm-rAm" eventType="valueChanged" id="0SL-yI-DKZ"/>
                                     <action selector="lettuceNumberOfDaysSincePlanting:" destination="viz-I2-ZfW" eventType="valueChanged" id="F52-li-gYv"/>
+                                    <action selector="pepperNumberOfDaysSincePlanting:" destination="3Gk-Wk-2mU" eventType="valueChanged" id="WGf-el-v3R"/>
                                     <action selector="springOnionNumberOfDaysSincePlanting:" destination="bPY-eR-e7h" eventType="valueChanged" id="xpK-Ua-RoZ"/>
                                 </connections>
                             </slider>
@@ -2008,6 +2061,7 @@
                                     <action selector="calculateBasilDays:" destination="nyu-x2-eDX" eventType="touchUpInside" id="Y1Y-dD-CBU"/>
                                     <action selector="calculateCucumberDays:" destination="Qma-Tm-rAm" eventType="touchUpInside" id="oNe-pW-qqf"/>
                                     <action selector="calculateLettuceDays:" destination="viz-I2-ZfW" eventType="touchUpInside" id="a23-nU-BUI"/>
+                                    <action selector="calculatePepperDays:" destination="3Gk-Wk-2mU" eventType="touchUpInside" id="GpG-wT-JZA"/>
                                     <action selector="calculateSpringOnionDays:" destination="bPY-eR-e7h" eventType="touchUpInside" id="6fe-yA-dPP"/>
                                 </connections>
                             </button>
@@ -2016,6 +2070,10 @@
                         <color key="backgroundColor" red="0.41960784309999999" green="0.53725490200000003" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="VTh-i7-rQe"/>
+                    <connections>
+                        <outlet property="pepperInformation" destination="4lx-S3-sqA" id="lDU-nd-MWo"/>
+                        <outlet property="pepperSlider" destination="0rT-gY-xtu" id="0uy-y6-F8W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yap-G9-r8E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2500,12 +2558,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="MBg-K6-WbS"/>
-        <segue reference="fOo-tH-GC6"/>
-        <segue reference="AKE-h5-Vxs"/>
-        <segue reference="VGM-Jb-BeN"/>
+        <segue reference="ZXv-rB-nyg"/>
+        <segue reference="m92-Wr-Czb"/>
+        <segue reference="RU8-jh-Ws4"/>
+        <segue reference="s1T-o6-ONb"/>
         <segue reference="Kzs-Cr-RSf"/>
-        <segue reference="iJ4-K9-ngl"/>
+        <segue reference="gAL-fM-bsb"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="About Us" width="814" height="400"/>
@@ -2530,11 +2588,16 @@
         <image name="cucumberPicture" width="732" height="549"/>
         <image name="cucumbers" width="476" height="324"/>
         <image name="earth2" width="687" height="687"/>
+        <image name="evenMoreVegetables" width="612" height="379"/>
         <image name="gardenSupplies" width="1024" height="584"/>
         <image name="growGreen" width="500" height="500"/>
         <image name="growPlants" width="1124" height="598"/>
         <image name="home" width="64" height="64"/>
+        <image name="indoorSofaKitchenGarden" width="800" height="532"/>
         <image name="kitchenGarden" width="100" height="100"/>
+        <image name="kitchenGardenByTheWindow" width="2121" height="1414"/>
+        <image name="kitchenGardenImageInCans" width="564" height="374"/>
+        <image name="kitchenGardenOverSink" width="600" height="450"/>
         <image name="lettuce" width="478" height="324"/>
         <image name="lettucePicture" width="259" height="194"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
